@@ -35,7 +35,7 @@ Conecta tu ESP32 a tu computadora, sube el código generado y si todos esta bien
 Usa la aplicación web para reproducir el archivo MIDI y verificar cómo sonará en tu ESP32.
 
 ## Interfaz 
-<a href='https://postimg.cc/qt4FkL5S' target='_blank'><img src='https://i.postimg.cc/7L2rntMH/midi2sampler.png' border='0' alt='midi2sampler'/></a>
+<a href='https://postimg.cc/qt4FkL5S' target='_blank'><img src='https://i.postimg.cc/7L2rntMH/midi2sampler.png' border='0' width="50%" alt='Interfaz'/></a>
 
 #### Codigo de ejemplo
 ```
