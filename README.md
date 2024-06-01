@@ -14,14 +14,14 @@ fue desarrollada usando la libreria Tone.js para javascript.
 * Librería samplerSynth instalada en el entorno Arduino
 
 ## Instrucciones
-* <b>Abre el archivo index.html en tu navegador.</b>
-* <b>Arrastra y suelta el archivo MIDI en el área designada o usa el botón de carga.</b>
+* Abre el archivo index.html en tu navegador.
+* Arrastra y suelta el archivo MIDI en el área designada o usa el botón de carga.
 #### Configura las opciones:
-* <b>Tipo de código: Selecciona si deseas generar un Sketch completo o solo una Función.</b>
-* <b>Nombre de la función: Si seleccionas Función, proporciona un nombre para la función.</b>
-* <b>Instrumento: Elige el instrumento que deseas usar para la reproducción.</b>
-* <b>Volumen: Ajusta el volumen de la reproducción.</b>
-* <b>Poly: Establece el número máximo de notas que pueden sonar simultáneamente.</b>
+* <b>Tipo de código:</b> Selecciona si deseas generar un Sketch completo o solo una Función.
+* <b>Nombre de la función:</b> Si seleccionas Función, proporciona un nombre para la función.
+* <b>Instrumento:</b> Elige el instrumento que deseas usar para la reproducción.
+* <b>Volumen:</b> Ajusta el volumen de la reproducción.</b>
+* <b>Poly:</b> Establece el número máximo de notas que pueden sonar simultáneamente.
 * <b>Por ultimo Carga tu archivo MIDI.</b>
 
 ## Reproduce el MIDI en tu ESP32
