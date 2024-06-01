@@ -8,8 +8,7 @@ fue desarrollada usando la libreria Tone.js para javascript.
 * <b>Interfaz amigable:</b> Interfaz web intuitiva para cargar archivos MIDI y configurar las opciones de conversión.
 * <b> Reproducción de MIDI:</b> Reproduce archivos MIDI directamente desde la aplicación web utilizando Tone.js.
   
-## Uso
-Requisitos
+## Requisitos
 Navegador web moderno (Google Chrome, Mozilla Firefox, etc.)
 Placa ESP32
 Librería samplerSynth instalada en el entorno Arduino
