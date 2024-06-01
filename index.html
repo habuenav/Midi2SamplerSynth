@@ -2,10 +2,10 @@
 <html>
 <head>
     <title>Conversor Midi</title>
-    <script src="jquery-3.4.1.min.js"></script> <!-- Aseg鷕ate de usar la versi髇 minificada -->
-    <script src="Tone.js"></script> <!-- Aseg鷕ate de usar la versi髇 minificada -->
-    <script src="tonejs-ui.js"></script> <!-- Aseg鷕ate de usar la versi髇 minificada -->
-    <script src="Midi.js"></script> <!-- Aseg鷕ate de usar la versi髇 minificada -->
+    <script src="jquery-3.4.1.min.js"></script> <!-- Aseg煤rate de usar la versi贸n minificada -->
+    <script src="Tone.js"></script> <!-- Aseg煤rate de usar la versi贸n minificada -->
+    <script src="tonejs-ui.js"></script> <!-- Aseg煤rate de usar la versi贸n minificada -->
+    <script src="Midi.js"></script> <!-- Aseg煤rate de usar la versi贸n minificada -->
 </head>
 <body>
     <style type="text/css">
@@ -78,12 +78,12 @@
             Conversor de archivos Midi a instrucciones Arduino compatibles con la libreria SamplerSynth para Esp32.
         </div>
         <div id="Options">
-            <label for="CodeType">Tipo de c骴igo:</label>
+            <label for="CodeType">Tipo de c贸digo:</label>
             <select id="CodeType">
                 <option value="Sketch">Generar Sketch</option>
-                <option value="Function">Generar Funci髇</option>
+                <option value="Function">Generar Funci贸n</option>
             </select>
-            <label for="FunctionName">Nombre de la funci髇:</label>
+            <label for="FunctionName">Nombre de la funci贸n:</label>
             <input type="text" id="FunctionName" placeholder="cancion_midi" value="cancion"> <br><br>
             <label for="Instrument">Instrumento:</label>
             <select id="Instrument">
@@ -103,11 +103,13 @@
             </select>
             <label for="Volume">Volumen:</label>
             <input type="number" id="Volume" value="10" min="0" max="20">
+           <!--
             <label for="NoteType">Notacion:</label>
-            <select id="NoteType">
-                <option value="nombreNota">Nombre Nota</option>
+                       <select id="NoteType">
+               <option value="nombreNota">Nombre Nota</option>
                 <option value="numeroNota">Numero Nota</option>
             </select>
+            -->
             <label for="Poly">Poly:</label>
             <input type="number" id="Poly" value="8" min="1" max="16">
         </div>
@@ -192,7 +194,7 @@
             let previousCommand = -1;
             let previousTime = 0;
             const codeType = document.querySelector("#CodeType").value;
-            const noteType = document.querySelector("#NoteType").value;
+            //const noteType = document.querySelector("#NoteType").value;
             const functionName = document.querySelector("#FunctionName").value || "nombre_funcion";
             const instrument = document.querySelector("#Instrument").value;
             const volume = document.querySelector("#Volume").value;
@@ -214,11 +216,14 @@
                 }
                 if (previousCommand !== note.trackId) {
                     const duration = note.duration === 0 ? 1 : Math.floor(note.duration * 1000);
+                   arduinoCommands.push(`notaOn(${note.midi}, ${Math.round(note.velocity * 127)}, ${duration});\n`);
+                 /*
                     if (noteType === "nombreNota") {
                         arduinoCommands.push(`notaOn(NOTA_${note.name.replace("#", "S")}, ${Math.round(note.velocity * 127)}, ${duration});\n`);
                     } else if (noteType === "numeroNota") {
                         arduinoCommands.push(`notaOn(${note.midi}, ${Math.round(note.velocity * 127)}, ${duration});\n`);
                     }
+                    */
                     previousCommand = note.trackId;
                     previousTime = note.time;
                 }
@@ -263,4 +268,3 @@
     </script>
 </body>
 </html>
-
