@@ -40,20 +40,32 @@ Usa la aplicación web para reproducir el archivo MIDI y verificar cómo sonará
 #### Codigo de ejemplo
 ```
 #include <samplerSynth.h>
-
+void Riff() {
+notaOn(67, 91, 166);
+delay(333);notaOn(67, 93, 83);
+delay(166);notaOn(62, 86, 166);
+delay(333);notaOn(62, 98, 83);
+delay(166);notaOn(67, 110, 166);
+delay(333);notaOn(67, 98, 83);
+delay(166);notaOn(62, 91, 166);
+delay(333);notaOn(62, 94, 83);
+delay(166);notaOn(63, 100, 166);
+delay(333);notaOn(63, 95, 83);
+delay(166);notaOn(63, 94, 166);
+delay(166);notaOn(65, 108, 166);
+delay(166);notaOn(63, 91, 166);
+delay(166);notaOn(62, 90, 499);
+}
 void setup() {
-  Serial.begin(115200);
-  initSynth();
-  setVolumen(3);
-  setInstrumento(6);
+Serial.begin(115200);
+initSynth();
+setVolumen(40);
+setMaxNotas(8);
+setInstrumento(0);
+delay(1000);
+Riff();
 }
-byte nota=60;
-void loop() {
-notaOn(nota);
-delay(500);
-nota++;
-if(nota==72){nota=60; delay(5000);}   
-}
+void loop() {}
 ```
 
 ## Acerca de
