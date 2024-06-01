@@ -9,9 +9,9 @@ fue desarrollada usando la libreria Tone.js para javascript.
 * <b> Reproducción de MIDI:</b> Reproduce archivos MIDI directamente desde la aplicación web utilizando Tone.js.
   
 ## Requisitos
-Navegador web moderno (Google Chrome, Mozilla Firefox, etc.)
-Placa ESP32
-Librería samplerSynth instalada en el entorno Arduino
+* Navegador web moderno (Google Chrome, Mozilla Firefox, etc.)
+* Placa ESP32
+* Librería samplerSynth instalada en el entorno Arduino
 
 ## Instrucciones
 * <b>Abre el archivo index.html en tu navegador.</b>
@@ -33,10 +33,14 @@ Conecta tu ESP32 a tu computadora, sube el código generado y si todos esta bien
 ## Reproduce el MIDI en la aplicacion Web
 Usa la aplicación web para reproducir el archivo MIDI y verificar cómo sonará en tu ESP32.
 
-## Interfaz 
+## Interfaz
+<details>
+<summary> <b>Ver imagen</b> </summary>
 <a href='https://postimg.cc/qt4FkL5S' target='_blank'><img src='https://i.postimg.cc/7L2rntMH/midi2sampler.png' border='0' width="50%" alt='Interfaz'/></a>
+</details>
 
-#### Ejemplo Codigo generado
+## Ejemplo Codigo generado
+
 ```
 #include <samplerSynth.h>
 void Riff() {
@@ -66,7 +70,6 @@ Riff();
 }
 void loop() {}
 ```
-
 ## Acerca de
 Este proyecto fue desarrollado por Holman Buenaventura en 2024. La idea surgió de la querer ampliar la utilidad de la libreria samplerSynth y lo que se buscaba era reproducir archivos MIDI en la placa ESP32
 gracias a la librería samplerSynth, proporcionando una forma fácil y accesible de convertir y generar el código necesario para tal fin.
