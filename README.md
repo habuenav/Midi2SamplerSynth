@@ -17,7 +17,7 @@ Librería samplerSynth instalada en el entorno Arduino
 ## Instrucciones
 * <b>Abre el archivo index.html en tu navegador.</b>
 * <b>Arrastra y suelta el archivo MIDI en el área designada o usa el botón de carga.</b>
-####Configura las opciones:
+#### Configura las opciones:
 * <b>Tipo de código: Selecciona si deseas generar un Sketch completo o solo una Función.</b>
 * <b>Nombre de la función: Si seleccionas Función, proporciona un nombre para la función.</b>
 * <b>Instrumento: Elige el instrumento que deseas usar para la reproducción.</b>
