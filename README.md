@@ -1,5 +1,5 @@
-# Midi2Sampler
-Midi2Sampler es una aplicación web que convierte archivos MIDI en instrucciones compatibles con Arduino y la librería samplerSynth (https://github.com/habuenav/samplerSynth) , permitiendo la reproducción de archivos MIDI en la placa ESP32 utilizando las características de la librería samplerSynth.
+# Midi2SamplerSynth
+Midi2SamplerSynth es una aplicación web que convierte archivos MIDI en instrucciones compatibles con Arduino y la librería samplerSynth (https://github.com/habuenav/samplerSynth) , permitiendo la reproducción de archivos MIDI en la placa ESP32 utilizando las características de la librería samplerSynth.
 fue desarrollada usando la libreria Tone.js para javascript.
 
 ## Características
